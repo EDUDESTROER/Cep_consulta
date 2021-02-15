@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <Title>SeuCep.com | Página Central</Title><!--Cria um titulo para a página-->
+        <meta charset="utf-8"><!--Defini os caracteres para UTF-8 tendo assim mais caracteres disponiveis-->
+        <meta charset="Autor:" content="EDUDESTROER"><!--Defini o autot como EDUDESTROER-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Defini a proporção da tela, para um site mais responsivo-->
+        <meta name="description" content="Encontre informações sobre seu Cep!"><!--Cria um Descrição para o site e coloca nela a frase-->
+        <link rel="stylesheet" href="css/style.css"></link> <!--Linka o HTML ao seu CSS-->
+        <link rel="icon" href="icon.png"> <!-- Hospedar e colocar um icone-->
+        <script type="text/javascript" src="main.js"></script>
+        <script type="text/javascript" src="Jquery.js"></script>
+    </head>
+    <Body>
+        <img src="Sem Título-2.png" alt="Imagem de fundo da página">
+        <input type="text" id="cep" maxlength="8" placeholder="Digite Seu C.E.P Aqui..." pattern="[0-9]{8}" title="O C.E.P não deve conter traços, apenas números...">
+        <button type="button" onclick="consulta()">Pesquisar</button>
+        <div id="tudo">
+            <div id="coisa01">
+                <h3>CEP:</h1>
+                <h3 id="Tcep"></h1>
+            </div>
+            <div id="coisa1">
+                <p class="txt1">Logradouro: </p>
+                <p id="logradouro"></p>
+            </div>
+            <div id="coisa2">
+                <p class="txt1">Bairro: </p>
+                <p id="bairro"></p>
+            </div>
+            <div id="coisa3">
+                <p class="txt1">Localidade: </p>
+                <p id="localidade"></p>
+            </div>
+            <div id="coisa4">
+                <p class="txt1">UF: </p>
+                <p id="uf"> </p>
+            </div>
+            <div id="coisa5">
+                <p class="txt1">IBGE: </p>
+                <p id="ibge"></p>
+            </div>
+            <div id="coisa6">
+                <p class="txt1">SIAFI: </p>
+                <p id="siafi"></p>
+            </div>
+            <div id="coisa7">
+                <p class="txt1">Complemento: </p>
+                <p id="complemento"></p>
+            </div>
+        </div>
+    </Body>
+</html>
